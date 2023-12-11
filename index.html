@@ -29,21 +29,33 @@
   </head>
   <body>
     <main>
-      <div class="star"><img src="/images/icon-star.svg" alt="star-icon" /></div>
-      <h1>How did we do?</h1>
-      <p>
-        Please let us know how we did with your support request. All feedback is appreciated to help us
-        improve our offering!
-      </p>
-      <div class="scores">
-        <div class="score">1</div>
-        <div class="score">2</div>
-        <div class="score">3</div>
-        <div class="score">4</div>
-        <div class="score">5</div>
-      </div>
-      <button class="submit">SUBMIT</button>
+      <section class="submit-rating">
+        <div class="star"><img src="/images/icon-star.svg" alt="star-icon" /></div>
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback is appreciated to help us
+          improve our offering!
+        </p>
+        <ul>
+          <li><button class="score">1</button></li>
+          <li><button class="score">2</button></li>
+          <li><button class="score">3</button></li>
+          <li><button class="score">4</button></li>
+          <li><button class="score">5</button></li>
+        </ul>
+        <button class="submit" id="submit">SUBMIT</button>
+      </section>
+      <section class="thank-you hidden">
+        <div class="illustration"><img src="images/illustration-thank-you.svg" alt="thank-you" /></div>
+        <p class="info">You selected <span id="rating"></span> out of 5</p>
+        <h2>Thank You!</h2>
+        <p>
+          We appreciate you taking the time to give a rating. If you ever need a support, don't hesitate to
+          get in touch!
+        </p>
+      </section>
     </main>
+
     <!-- <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
